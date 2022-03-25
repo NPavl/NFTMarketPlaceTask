@@ -1,0 +1,10 @@
+node_modules
+yarn-error.log
+.env
+artifacts
+cache
+description.txt
+frontend
+coverage
+coverage.json
+typechain
