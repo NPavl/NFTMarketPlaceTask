@@ -8,3 +8,6 @@ frontend
 coverage
 coverage.json
 typechain
+contracts/draft.sol
+contracts/ERC721NFTBase.sol
+contracts/ERC20token.sol
