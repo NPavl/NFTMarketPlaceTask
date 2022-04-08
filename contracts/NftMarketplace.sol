@@ -29,11 +29,11 @@ import "./INftMarketplace.sol";
 // import "./ERC721NFTBase.sol"; //  
 // import "./ERC20token.sol"; //
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
-import "@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol";
+// import "@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol";
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/token/ERC721/IERC721.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
-import "@openzeppelin/contracts/utils/Counters.sol";
+// import "@openzeppelin/contracts/utils/Counters.sol";
 import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/math/SafeMath.sol";
@@ -45,8 +45,8 @@ contract NftMarketplace is INftMarketplace, Ownable {
     using SafeMath for uint32; 
     using SafeERC20 for IERC20;
     
-    using Counters for Counters.Counter;
-    Counters.Counter private _tokenIdCounter;
+    // using Counters for Counters.Counter;
+    // Counters.Counter private _tokenIdCounter;
 
     address[] private nftContract = new address[](0);
     address[] private erc20Contract = new address[](0);
@@ -352,8 +352,7 @@ function deleteDealerAuctionPosition(uint _selectId) external override onlyOwner
         return _selectId;
         }
 
-    // РАЗМЕЩЕНИЕ КОЛЛЕКЦИИ:
-    // перед размещением токена нужно 
+    // РАЗМЕЩЕНИЕ КОЛЛЕКЦИИ НА ПРОДАЖУ:
     function listItemOnSale(
         uint _selectId, // id токена 
         address _nftContract,
