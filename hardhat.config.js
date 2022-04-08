@@ -1,6 +1,6 @@
 require('dotenv').config();
 require("@nomiclabs/hardhat-waffle")
-const {PRIVATE_KEY, ALCHEMY_API_KEY, ETHERSCAN_API_KEY, COINMARKETCAP_API_KEY} = process.env
+const {PRIVATE_KEY2, ALCHEMY_API_KEY, ETHERSCAN_API_KEY, COINMARKETCAP_API_KEY} = process.env
 require("@nomiclabs/hardhat-etherscan")
 //require('solidity-coverage')
 //require("hardhat-gas-reporter");
@@ -20,7 +20,7 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
   networks: {
     rinkiby: {
       url: `https://eth-rinkeby.alchemyapi.io/v2/${ALCHEMY_API_KEY}`,
-      accounts: [`${PRIVATE_KEY}`], // [`0x${PRIVATE_KEY}`]
+      accounts: [`${PRIVATE_KEY2}`], // [`0x${PRIVATE_KEY}`]
       network_id: 4
     },  
     // ropsten: {
